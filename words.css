@@ -1,9 +1,40 @@
 body {
     background-color: #FFE8D6;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #container {
     text-align: center;
     margin-top: 10em;
+    color: #6B705C;
+}
+
+#wordinput {
+    border-color: #979DAC;
+    border-radius: 0.5em;
+    font-size: larger;
+    font-style: italic;
+    background-color: #f0d8c8;
+}
+
+#outputwordtext {
+    margin-top: 4em;
+    color: #6B705C;
+    font-size: larger;
+}
+
+#analyzebtn {
+    margin-top: 2em;
+    color: #6B705C;
+    border-radius: 1.5em;
+    background-color: transparent;
+    font-weight: normal;
+    font-style: italic;
+    border-color: #979DAC;
+}
+
+#analyzebtn:hover {
+    cursor: pointer;
+    box-shadow: 5px 10px 20px #DDA15E;
+    text-decoration: turquoise;
 }
