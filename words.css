@@ -1,0 +1,9 @@
+body {
+    background-color: #FFE8D6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    text-align: center;
+    margin-top: 10em;
+}
