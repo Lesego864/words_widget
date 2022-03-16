@@ -10,10 +10,19 @@
 </head>
 
 <body>
+    <h1>Welcome To The Word Widget Exercise!</h1>
     <div id="container">
-        <input type="text" id="wordinput" placeholder="Enter your sentence here"> <br>
-        <button id="analyzebtn">ANALYZE!</button>
-        <h3 id="outputwordtext"></h3>
+        <input type="text" class="wordInputElem" placeholder="Enter a sentence here">
+        <button class="analyzeElem">Analyze!</button>
+        <h3 class="outputElem"></h3>
+        <p class="wordCount"></p>
+        <form class="checkboxElem">
+            <input type="checkbox" class="hide" />
+            <label for="hide">Show/Hide short words!</label>
+
+
+
+        </form>
     </div>
 
 
@@ -21,7 +30,9 @@
 
 
 
-
+    <div class="footer">
+        <h4>Lesego Tshipu | Word Widget | Google Workplace Incubation 2022</h>
+    </div>
 
     <script src="words.js"></script>
 </body>

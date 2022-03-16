@@ -1,15 +1,27 @@
 body {
     background-color: #FFE8D6;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+mark {
+    background-color: yellow;
+    color: black;
+}
+
+h1 {
+    color: #6B705C;
+    text-align: center;
+    margin-top: 1em;
 }
 
 #container {
     text-align: center;
-    margin-top: 10em;
+    margin-top: 8em;
     color: #6B705C;
 }
 
-#wordinput {
+.wordInputElem {
     border-color: #979DAC;
     border-radius: 0.5em;
     font-size: larger;
@@ -17,13 +29,13 @@ body {
     background-color: #f0d8c8;
 }
 
-#outputwordtext {
+.outputElem {
     margin-top: 4em;
     color: #6B705C;
     font-size: larger;
 }
 
-#analyzebtn {
+.analyzeElem {
     margin-top: 2em;
     color: #6B705C;
     border-radius: 1.5em;
@@ -33,8 +45,22 @@ body {
     border-color: #979DAC;
 }
 
-#analyzebtn:hover {
+.analyzeElem:hover {
     cursor: pointer;
     box-shadow: 5px 10px 20px #DDA15E;
     text-decoration: turquoise;
+}
+
+.checkbox.hide {
+    width: 30px;
+}
+
+.checkbox label {
+    line-height: 52px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 19.5em;
+    color: #6B705C;
 }

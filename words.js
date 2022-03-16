@@ -1,12 +1,26 @@
-let analyzeButton = document.getElementById("analyzebtn");
-let outputWord = document.getElementById("outputwordtext");
+const analyzeBtn = document.querySelector('.analyzeElem');
+const outputElem = document.querySelector('.outputElem');
+const wordInputElem = document.querySelector('.wordInputElem');
+const wordCount = document.querySelector('.wordCount');
+const hideWordsElem = document.querySelector('.hide');
 
-analyzeButton.addEventListener('click', () => {
-    let input = document.getElementById("wordinput").value.split(" ").length;
-    console.log(input);
-    if (input > 4) {
-        outputWord.innerHTML = ""
-    } else {
-        outputWord.innerHTML = "There are " + input + " words in your sentence."
+analyzeBtn.addEventListener('click', () => {
+    const wordVal = wordInputElem.value;
+    let words = wordVal.split(" ");
+
+    for (let i = 0; i < words.length; i++) {
+        let elem = words[i];
+
+        if (elem.length > 4) {
+            outputElem.innerHTML += "<mark>" + elem + "</mark>" + " ";
+        } else {
+            outputElem.innerHTML += elem + " ";
+        }
     }
+
+    wordCount.innerHTML = `There are <strong> ${words.length} </strong> words in a sentence.`
+
+
+
+
 });
