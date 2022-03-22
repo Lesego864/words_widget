@@ -21,7 +21,7 @@ let sentenceButton = () => {
         } else {
             outputElem.innerHTML += elem + " ";
         }
-        wordCount.innerHTML = `There are <strong> ${words.length} </strong> words in a sentence.`
+        wordCount.innerHTML = `There are <strong> ${words.length} </strong> words in this sentence.`
         console.log(words);
     }
 }
