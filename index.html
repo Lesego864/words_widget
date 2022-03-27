@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Words Widget</title>
     <link rel="stylesheet" href="words.css">
+    <title>Words Widget</title>
 </head>
 
 <body>
     <h1>Welcome To The Word Widget Exercise!</h1>
-    <div id="container">
-        <input type="text" class="wordInputElem" placeholder="Enter a sentence here">
+
+    <div class="container">
+        <input type="text" class="wordInputElem" placeholder="Enter a Sentence Here">
         <button class="analyzeElem">Analyze!</button>
+        <div>
+            <input type="checkbox" class="hide" value="selected">Show/Hide words shorter than 5 characters!
+        </div>
         <h3 class="outputElem"></h3>
         <p class="wordCount"></p>
-        <p class="message"></p>
-        <div class="checkboxElem">
-            <input type="checkbox" class="hide" />
-            <label for="hide">Show/Hide words shorter than 5 characters!</label>
-
-        </div>
+        <div class="message"></div>
     </div>
-
-
-
-
 
 
     <div class="footer">
@@ -34,6 +29,7 @@
     </div>
 
     <script src="words.js"></script>
+    <script src="words-dom.js"></script>
 </body>
 
 </html>
