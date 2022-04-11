@@ -1,34 +1,36 @@
 body {
-    background-color: #FFE8D6;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
+    background-color: #F5F3F4;
+    /* background: radial-gradient(rgba(126, 158, 170, 0.685), rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.3)); */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-style: oblique;
 }
 
 h1 {
-    color: #6B705C;
+    color: #660708;
     text-align: center;
     margin-top: 1em;
 }
 
 .container {
-    text-align: center;
     margin-top: 8em;
-    color: #6B705C;
+    color: #161A1D;
 }
 
 .wordInputElem {
-    border-color: #979DAC;
+    border-color: #343A40;
     border-radius: 0.5em;
     font-size: larger;
     font-style: italic;
-    background-color: #f0d8c8;
+    color: #660708;
+    background-color: #F5F3F4;
     margin-bottom: 3em;
     margin-right: 1em;
 }
 
 .analyzeElem {
     margin-top: 2em;
-    color: #6B705C;
+    color: #A4161A;
     border-radius: 1.5em;
     background-color: transparent;
     font-weight: normal;
@@ -38,7 +40,7 @@ h1 {
 
 .analyzeElem:hover {
     cursor: pointer;
-    box-shadow: 5px 10px 20px #DDA15E;
+    box-shadow: 5px 10px 20px #B1A7A6;
     text-decoration: turquoise;
 }
 
@@ -47,15 +49,18 @@ h1 {
 }
 
 .longer {
-    background-color: lightblue;
+    background-color: #D3D3D3;
     padding: 0.3em;
     margin: 0.1em;
+    border-radius: 1em;
 }
 
 .longest {
-    background-color: lightgreen;
+    background-color: #B1A7A6;
+    color: #660708;
     padding: 0.3em;
     margin: 0.1em;
+    border-radius: 1em;
 }
 
 .message {
@@ -69,5 +74,17 @@ h1 {
 .footer {
     text-align: center;
     margin-top: 17.5em;
-    color: #6B705C;
+    color: #A4161A;
+}
+
+.dot {
+    margin-left: 2em;
+    background-color: green;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.lastSentence {
+    display: flex;
 }

@@ -1,8 +1,25 @@
 let WordCounter = (sentence) => {
 
-    const words = sentence.split(" ");
+    // const words = sentence.split(" ");
+    // const row = 1;
+    const sentenceArray = [];
+    // const sentenceObject = {
+    //     sentence,
+    //     totalWords,
+    //     countWords,
+    //     averageLength
+    // }
+    let getSentenceArray = () => {
+        return sentenceArray
+    }
+    let addSentenceObject = () => {
+        sentenceArray.push(sentence);
+    }
 
-    let getWords = () => {
+
+    let getWords = (input) => {
+        // console.log(input);
+        const words = input.split(" ");
 
         const wordlist = words.map(word => {
             return {
@@ -30,11 +47,21 @@ let WordCounter = (sentence) => {
         return getWords().filter(word => word.length >= 5);
     }
     let test = () => {
-        console.log("hello");
-    }
+            console.log("hello");
+        }
+        // let displayDetails = () => {
+        //     const newRow = keepTrackElem.insertRow(row);
+        //     var cell1 = newRow.insertCell(0);
+        //     cell1.innerHTML = words;
+        //     row++;
+
+    // }
     return {
         getWords,
         longerWords,
-        test
+        test,
+        getSentenceArray,
+        addSentenceObject
+        // displayDetails
     }
 }
